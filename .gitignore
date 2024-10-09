@@ -1,5 +1,45 @@
-# IDKTBH
+# Xcode
 .DS_Store
+build/
+DerivedData/
+
+# Xcode workspace
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/xcschemes/
+
+# User-specific Xcode settings
+*.xcuserstate
+*.xcuserdata/
+
+# Scheme Management
+*.xcscheme
+xcschememanagement.plist
+
+# CocoaPods
+Pods/
+
+# Swift Package Manager
+/.swiftpm/
+/Packages/
+/Package.pins
+Package.resolved
+
+# Carthage
+Carthage/Build/
+
+# iOS-specific
+*.ipa
+*.moved-aside
+*.hmap
+
+# Logs
+*.log
+
+# Other
+*.lock
+*.swp
+*.swo
+
 
 # VS Code
 .history/
