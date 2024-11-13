@@ -1,0 +1,52 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/rockwall">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pathfinder"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        android:padding="20dp"/>
+
+    <!-- Button 1: Starts the video -->
+    <Button
+        android:id="@+id/button_option1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Video"
+        android:layout_margin="12dp"
+        android:padding="10dp"/>
+
+    <!-- Button 2: Starts video recording -->
+    <Button
+        android:id="@+id/button_option2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Record Video"
+        android:padding="10dp"/>
+
+    <!-- PlayerView to display video -->
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <!-- Fullscreen Button -->
+    <Button
+        android:id="@+id/fullscreen_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fullscreen"
+        android:layout_margin="12dp"
+        android:padding="10dp"
+        android:visibility="gone"/>
+</LinearLayout>
