@@ -16,6 +16,8 @@ import androidx.media3.ui.PlayerView
 import android.provider.MediaStore
 import android.content.pm.PackageManager
 import android.Manifest
+import com.chaquo.python.Python
+import com.chaquo.python.PyObject
 
 class MainActivity : AppCompatActivity() {
 
@@ -37,6 +39,7 @@ class MainActivity : AppCompatActivity() {
 
         val buttonOption1 = findViewById<Button>(R.id.button_option1)
         val buttonOption2 = findViewById<Button>(R.id.button_option2)
+        val buttonRunPython = findViewById<Button>(R.id.button_run_python) // New button to run Python script
 
         // Set click listeners for each video button
         buttonOption1.setOnClickListener {
@@ -62,6 +65,11 @@ class MainActivity : AppCompatActivity() {
         // Set click listener for fullscreen button
         fullscreenButton.setOnClickListener {
             toggleFullscreen()
+        }
+
+        // Set click listener for running Python script
+        buttonRunPython.setOnClickListener {
+            runPythonScript()
         }
     }
 
@@ -177,5 +185,15 @@ class MainActivity : AppCompatActivity() {
         super.onStop()
         player?.release()
         player = null
+    }
+
+    // Run the Python script
+    private fun runPythonScript() {
+        val python = Python.getInstance()
+        val py = python.getModule("Hello")  // Replace with the name of your Python script without the .py extension
+        val result: PyObject = py.callAttr("greet")
+
+        // Show the result in a Toast message
+        Toast.makeText(this, result.toString(), Toast.LENGTH_LONG).show()
     }
 }
