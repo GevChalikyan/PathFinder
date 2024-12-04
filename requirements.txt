@@ -4,3 +4,4 @@ torchvision
 torchaudio
 tensorflow
 opencv-python
+ultralytics
