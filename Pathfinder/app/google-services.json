@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "654900313558",
+    "project_id": "pathfinderback",
+    "storage_bucket": "pathfinderback.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654900313558:android:9f2b937179eb6a8018f877",
+        "android_client_info": {
+          "package_name": "com.chaquo.python"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbVFltcaWJNoGMmq2TfsLR1lbYzYJecHs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654900313558:android:7ab7d5cb5215d92a18f877",
+        "android_client_info": {
+          "package_name": "com.example.pathfinder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbVFltcaWJNoGMmq2TfsLR1lbYzYJecHs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
