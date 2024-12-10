@@ -72,7 +72,7 @@ interpreter = tf.lite.Interpreter(model_path='../models/MoveNet_Lightning.tflite
 interpreter.allocate_tensors()
 
 # Open camera (May need to be played with)
-cap = cv2.VideoCapture("sample3.mp4")
+cap = cv2.VideoCapture(1)
 
 # Get properties of the video
 fps = cap.get(cv2.CAP_PROP_FPS)
