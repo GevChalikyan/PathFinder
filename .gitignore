@@ -5,6 +5,10 @@
 .history/
 .vscode/
 
+# Media
+output.mp4
+sample.mp4
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
